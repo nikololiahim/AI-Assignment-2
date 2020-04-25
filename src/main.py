@@ -72,7 +72,7 @@ class Individual:
     mutation_chance = 1
     mutation_scale = 32
     mutation_strength = 5
-    original = cv2.imread("donkey.jpg")
+    original = cv2.imread("assets/donkey.jpg")
     height = original.shape[0]
     width = original.shape[1]
 
@@ -148,7 +148,7 @@ class Algorithm:
     stale_count = 0
 
     def __init__(self,
-                 original_path="donkey.jpg",
+                 original_path="assets/donkey.jpg",
                  population_size=1300,
                  number_of_generations=1000000,
                  breeding_ratio=0.5,
@@ -156,8 +156,8 @@ class Algorithm:
                  mutation_scale=64,
                  mutation_times=10
                  ):
-        if not os.path.exists('out'):
-            os.makedirs('out')
+        if not os.path.exists('../out'):
+            os.makedirs('../out')
         Individual.original = cv2.imread(original_path)
         self.population_size = population_size
         self.number_of_generations = number_of_generations
