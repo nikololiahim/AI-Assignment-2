@@ -2,5 +2,5 @@
 
 # Example
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://media.giphy.com/media/Te0pHtFsUqCEcyoo5k/giphy.gif)
 
