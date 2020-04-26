@@ -1,6 +1,6 @@
 # AI-Assignment-2
 
-# Example
+# Examples
 
 ![Evolution of donkey](donkey.gif)
 
