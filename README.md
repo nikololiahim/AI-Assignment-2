@@ -27,9 +27,12 @@ for Windows
   
 ## Examples
 1. population size: 1000, number of generations: 6000
+
 ![Evolution of a donkey](examples/donkey.gif)
 2. population size: 1500, number of generations: 1200
+
 ![Evolution of a hare](examples/hare.gif)
 3. population size: 2000, number of generations: 2000
+i
 ![Evolution of a hedgehog](examples/hedgehog_in_the_fog.gif)
 
