@@ -27,5 +27,6 @@ for Windows
   
 ## Examples
 
-![Evolution of a donkey](donkey.gif)
-![Evolution of hare](hare.gif)
+![Evolution of a donkey](assets/donkey.gif)
+![Evolution of hare](assets/hare.gif)
+
