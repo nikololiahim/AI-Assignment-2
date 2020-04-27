@@ -26,7 +26,10 @@ for Windows
 5. In order to launch the algorithm, go to `<project root>/src/main.py` and run it.
   
 ## Examples
-
-![Evolution of a donkey](assets/donkey.gif)
-![Evolution of hare](assets/hare.gif)
+1. population size: 1000, number of generations: 6000
+![Evolution of a donkey](examples/donkey.gif)
+2. population size: 1500, number of generations: 1200
+![Evolution of a hare](examples/hare.gif)
+3. population size: 2000, number of generations: 2000
+![Evolution of a hedgehog](examples/hedgehog_in_the_fog.gif)
 
