@@ -123,7 +123,6 @@ class Individual:
         if image is not None:
             self.image = image
         else:
-            orig = self.original
             self.image = rnd.randint(low=0, high=256, size=(self.height, self.width, 3))
             # rndImg2 = np.reshape(orig, (orig.shape[0] * orig.shape[1], orig.shape[2]))
             # np.random.shuffle(rndImg2)
@@ -148,17 +147,19 @@ class Algorithm:
     stale_count = 0
 
     def __init__(self,
-                 original_path="assets/donkey.jpg",
-                 population_size=1300,
+                 original_path="assets/hedgehog_in_the_fog.jpg",
+                 population_size=2000,
                  number_of_generations=1000000,
                  breeding_ratio=0.5,
                  mutation_strength=10,
                  mutation_scale=64,
                  mutation_times=10
                  ):
-        if not os.path.exists('../out'):
-            os.makedirs('../out')
+        if not os.path.exists('out'):
+            os.makedirs('out')
         Individual.original = cv2.imread(original_path)
+        Individual.height = Individual.original.shape[0]
+        Individual.width = Individual.original.shape[1]
         self.population_size = population_size
         self.number_of_generations = number_of_generations
         self.breeding_ratio = breeding_ratio
@@ -181,7 +182,8 @@ class Algorithm:
             Individual.mutation_chance = np.sqrt(1 - i / self.number_of_generations)
             fitnesses = self.population.fitnesses()
             self.diversity = max(fitnesses) - min(fitnesses)
-            print(f"\rGeneration {i}/{self.number_of_generations}, size: {self.population_size}"
+            print(f"\rGeneration {i}/{self.number_of_generations},"
+                  f" size: {self.population_size}"
                   f" (chance: {Individual.mutation_chance * 100:.3},"
                   f" scale: {Individual.mutation_scale},"
                   f" strength: {Individual.mutation_strength},"
@@ -207,7 +209,7 @@ class Algorithm:
                     Individual.mutation_strength += 1
                 if Individual.mutation_scale > 8:
                     Individual.mutation_scale = Individual.mutation_scale // 2
-                if Individual.mutation_times < 10:
+                if Individual.mutation_times < 30:
                     Individual.mutation_times += 1
             self.population.evolve()
             if i % 100 == 0:
