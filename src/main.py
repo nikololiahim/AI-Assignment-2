@@ -77,10 +77,7 @@ class Individual:
     width = original.shape[1]
 
     def fitness_mse(self):
-        # return -np.float(np.abs((self.original - self.image)).sum())
         return -metrics.mean_squared_error(self.original, self.image)
-        # return -np.linalg.norm(np.abs(self.original - self.image))
-        # return -metrics.structural_similarity(self.original, self.image, multichannel=True)
 
     @staticmethod
     def crossover(ind1, ind2) -> tuple:
@@ -124,9 +121,6 @@ class Individual:
             self.image = image
         else:
             self.image = rnd.randint(low=0, high=256, size=(self.height, self.width, 3))
-            # rndImg2 = np.reshape(orig, (orig.shape[0] * orig.shape[1], orig.shape[2]))
-            # np.random.shuffle(rndImg2)
-            # self.image = np.reshape(rndImg2, orig.shape)
         self.fitness = self.fitness_mse()
 
     def show(self):
