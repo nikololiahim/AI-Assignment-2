@@ -1,4 +1,4 @@
-# AI-Assignment-2
+# Genetic Algorithm for Image Recreation
 
 ## Setup
 1. Clone this repo using `git clone https://github.com/raze-or-sharp/AI-Assignment-2.git`
