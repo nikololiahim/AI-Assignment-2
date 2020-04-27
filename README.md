@@ -1,4 +1,4 @@
-# Genetic Algorithm for Image Recreation
+# AI-Assignment-2
 
 ## Setup
 1. Clone this repo using `git clone https://github.com/raze-or-sharp/AI-Assignment-2.git`
@@ -24,5 +24,5 @@ for Windows
   
 ## Examples
 
-![Evolution of a donkey](donkey.gif)
-![Evolution of hare](hare.gif)
+![Evolution of a donkey](donkey.gif= 250x250)
+![Evolution of hare](hare.gif =250x250)
