@@ -24,5 +24,5 @@ for Windows
   
 ## Examples
 
-![Evolution of a donkey](donkey.gif= 250x250)
-![Evolution of hare](hare.gif =250x250)
+![Evolution of a donkey](donkey.gif)
+![Evolution of hare](hare.gif)
