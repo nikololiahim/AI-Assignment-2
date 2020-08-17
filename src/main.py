@@ -72,7 +72,7 @@ class Individual:
     mutation_chance = 1
     mutation_scale = 32
     mutation_strength = 5
-    original = cv2.imread("assets/donkey.jpg")
+    original = cv2.imread("../assets/donkey.jpg")
     height = original.shape[0]
     width = original.shape[1]
 
@@ -141,7 +141,7 @@ class Algorithm:
     stale_count = 0
 
     def __init__(self,
-                 original_path="assets/hedgehog_in_the_fog.jpg",
+                 original_path="../assets/hedgehog_in_the_fog.jpg",
                  population_size=2000,
                  number_of_generations=1000000,
                  breeding_ratio=0.5,
