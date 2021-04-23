@@ -2,7 +2,7 @@
 
 ## WARNING: This project doesn't support Python 3.8. Python 3.7.8 works fine.
 ## Setup
-1. Clone this repo using `git clone https://github.com/raze-or-sharp/AI-Assignment-2.git`
+1. Clone this repo using `git clone https://github.com/nikololiahim/AI-Assignment-2.git`
 2. In the project folder initialize the Python virtual environment (provided you have the virtualenv package installed `pip install virtualenv`)
 ```
   virtualenv venv
